@@ -13,7 +13,8 @@ class AvroTurf::ConfluentSchemaRegistry
     client_key: nil,
     client_key_pass: nil,
     client_cert_data: nil,
-    client_key_data: nil
+    client_key_data: nil,
+    connect_timeout: nil
   )
     @logger = logger
     headers = {
@@ -29,7 +30,8 @@ class AvroTurf::ConfluentSchemaRegistry
       client_key: client_key,
       client_key_pass: client_key_pass,
       client_cert_data: client_cert_data,
-      client_key_data: client_key_data
+      client_key_data: client_key_data,
+      connect_timeout: connect_timeout
     )
   end
 
